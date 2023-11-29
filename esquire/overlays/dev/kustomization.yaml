@@ -8,3 +8,8 @@ patches:
       kind: HorizontalPodAutoscaler
       name: esquire-deployment
       namespace: default
+  - path: replicas-patch.yaml
+    target:
+      kind: Deployment
+      name: esquire-deployment
+      namespace: default
