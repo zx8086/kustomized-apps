@@ -8,11 +8,11 @@ patches:
       kind: Deployment
       name: esquire-deployment
       namespace: default
-  - path: service-patch.yaml
-    target:
-      kind: Service
-      name: esquire-service
-      namespace: default
+  # - path: service-patch.yaml
+  #   target:
+  #     kind: Service
+  #     name: esquire-service
+  #     namespace: default
   - path: environment-patch.yaml
     target:
       kind: Service

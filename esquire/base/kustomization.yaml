@@ -6,4 +6,3 @@ resources:
 
 commonLabels:
   app: esquire
-  env: dev
