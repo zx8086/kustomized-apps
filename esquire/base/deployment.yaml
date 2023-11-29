@@ -2,10 +2,17 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: esquire-deployment
+  labels:
+    app: esquire-microservice
 spec:
   replicas: 1
+  selector:
+    matchLabels:
+      app: esquire-microservice
   template:
     metadata:
+      labels:
+        app: esquire-microservice
     spec:
       containers:
       - name: esquire-microservice
