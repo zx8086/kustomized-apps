@@ -1,6 +1,8 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: esquire-service-dev
+  name: esquire-service
+    labels:
+      app: esquire-deployment
   annotations:
     environment: development
