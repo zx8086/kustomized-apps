@@ -1,7 +1,7 @@
 apiVersion: autoscaling/v2beta2
 kind: HorizontalPodAutoscaler
 metadata:
-  name: frontend-deployment-hpa
+  name: esquire-deployment
 spec:
   minReplicas: 1
   maxReplicas: 2
