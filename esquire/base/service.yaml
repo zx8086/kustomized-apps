@@ -7,7 +7,5 @@ spec:
     app: esquire-deployment
   ports:
     - protocol: TCP
-      port: 8072 # Port exposed by the service
-      # targetPort: 8072 # Port exposed by the pod
-      nodePort: 30000 # Port exposed by the node
-  type: NodePort
+      port: 8072
+  type: LoadBalancer
