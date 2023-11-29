@@ -6,5 +6,7 @@ spec:
   selector:
     app: esquire-deployment
   ports:
-    - port: 8082
-      targetPort: 30101
+    - protocol: TCP
+      port: 8082
+      targetPort: 31000
+  type: NodePort
