@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
       - name: esquire-microservice
-        image: zx8086/esquire-microservice:7
+        image: zx8086/esquire-microservice:5
         ports:
         - containerPort: 8072
