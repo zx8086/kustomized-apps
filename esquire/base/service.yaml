@@ -2,13 +2,13 @@ apiVersion: v1
 kind: Service
 metadata:
   name: esquire-service
-  labels:
-    app: esquire-service
 spec:
-  ports:
-  - port: 80
-    protocol: TCP
-    name: http
   selector:
-    app: esquire-service
+    app: esquire-deployment
+  ports:
+    - protocol: TCP
+      name: http
+      port: 80  # The port you want to expose externally (outside the cluster)
+      targetPort: 8072
+      nodePort: 30080  # The port you want to expose externally (outside the cluster)
   type: NodePort
