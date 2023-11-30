@@ -7,9 +7,9 @@ metadata:
     app: esquire-service-dev
 spec:
   ports:
-  - port: 80
-    protocol: TCP
-    name: http
-  selector:
-    app: esquire-service-dev
-  type: LoadBalancer
+    - protocol: TCP
+      name: http
+      port: 80  # The port you want to expose externally (outside the cluster)
+      targetPort: 8072
+      nodePort: 30081  # The port you want to expose externally (outside the cluster)
+  type: NodePort
