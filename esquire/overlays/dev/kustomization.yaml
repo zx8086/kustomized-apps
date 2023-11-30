@@ -3,13 +3,11 @@ kind: Kustomization
 resources:
 - ../../base
 patches:
-- path: replicas-patch.yaml
-  target:
-    kind: Deployment
-    name: esquire-deployment-dev
-    namespace: dev
-- path: service-patch.yaml
-  target:
-    kind: Service
-    name: esquire-service-dev
-    namespace: dev
+  - path: deployment-patch.yaml
+    target:
+      kind: Deployment
+      name: esquire-deployment
+  - path: service-patch.yaml
+    target:
+      kind: Service
+      name: esquire-service
