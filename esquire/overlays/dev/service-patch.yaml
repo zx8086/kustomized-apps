@@ -1,8 +1,15 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: esquire-service
-    labels:
-      app: esquire-deployment
-  annotations:
-    environment: development
+  name: esquire-service-dev
+  namespace: dev
+  labels:
+    app: esquire-service-dev
+spec:
+  ports:
+  - port: 80
+    protocol: TCP
+    name: http
+  selector:
+    app: esquire-service-dev
+  type: LoadBalancer

@@ -6,10 +6,15 @@ patches:
   - path: replicas-patch.yaml
     target:
       kind: Deployment
-      name: esquire-deployment
-      namespace: default
+      name: esquire-service-dev
+      namespace: dev
   - path: service-patch.yaml
     target:
       kind: Service
-      name: esquire-service
-      namespace: default
+      name: esquire-service-dev
+      namespace: dev
+  - path: deployment-patch.yaml
+    target:
+      kind: Deployment
+      name: esquire-service-dev
+      namespace: dev
