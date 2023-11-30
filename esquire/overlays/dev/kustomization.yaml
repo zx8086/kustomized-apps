@@ -13,8 +13,3 @@ patches:
     kind: Service
     name: esquire-service-dev
     namespace: dev
-- path: deployment-patch.yaml
-  target:
-    kind: Deployment
-    name: esquire-deployment-dev
-    namespace: dev
