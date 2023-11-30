@@ -1,0 +1,15 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: esquire-deployment-dev
+  labels:
+    app: esquire-deployment-dev
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: esquire-deployment-dev
+  template:
+    metadata:
+      labels:
+        app: esquire-deployment-dev
