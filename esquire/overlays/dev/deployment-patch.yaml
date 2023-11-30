@@ -9,13 +9,3 @@ spec:
   selector:
     matchLabels:
       app: esquire-deployment
-  template:
-    metadata:
-      labels:
-        app: esquire-deployment
-    spec:
-      containers:
-      - name: esquire-microservice
-        image: zx8086/esquire-microservice:7
-        ports:
-        - containerPort: 8072
