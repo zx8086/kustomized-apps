@@ -1,8 +1,4 @@
 apiVersion: apps/v1
 kind: Deployment
-metadata:
-  name: esquire-deployment
-  labels:
-    app: esquire-deployment
 spec:
   replicas: 2
