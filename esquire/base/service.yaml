@@ -11,4 +11,4 @@ spec:
     name: http
   selector:
     app: esquire-service
-  type: LoadBalancer
+  type: NodePort
