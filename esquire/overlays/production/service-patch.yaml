@@ -9,5 +9,5 @@ spec:
     - protocol: TCP
       name: http
       port: 80  # The port you want to expose externally (outside the cluster)
-      targetPort: 8072
+      targetPort: 8072 # The port your container listens on
   type: NodePort
