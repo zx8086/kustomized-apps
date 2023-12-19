@@ -5,4 +5,4 @@ metadata:
   labels:
     app: esquire-deployment
 spec:
-  replicas: 2
+  replicas: 1
