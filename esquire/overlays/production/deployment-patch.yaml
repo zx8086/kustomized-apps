@@ -5,7 +5,7 @@ metadata:
   labels:
     app: esquire-deployment
 spec:
-  replicas: 1
+  replicas: 9
   selector:
     matchLabels:
       app: esquire-deployment
